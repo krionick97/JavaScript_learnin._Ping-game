@@ -1,0 +1,126 @@
+@import 'colors'
+
+body
+  font-family: sans-serif
+  font-size: 14px
+
+.font-awesome
+  font-size: 32px
+  color: $primary-color
+
+h2
+  font-size: 38px
+  text-transform: uppercase
+
+h3
+  font-size: 22px
+  text-transform: uppercase
+  font-weight: lighter
+
+.score
+  font-size: 54px
+  color: $primary-color
+
+.section
+  height: 100vh
+  background-image: url('../img/background-img.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &__window
+    // padding: 20px 0 20px
+    background-color: #ffffff
+    width: 800px
+    height: 500px
+    position: relative
+    display: flex
+    overflow: hidden
+
+#dice
+  display: none
+  transform: translateY(-50px)
+  width: 100px
+  height: auto
+  position: absolute
+  z-index: 1
+  box-shadow: 0 0 8px rgba(0,0,0,0.1)
+
+.player
+  padding: 115px 0 30px
+  width: 50%
+  text-align: center
+.player-title
+  margin:
+    // top: 50px
+    bottom: 30px
+.score
+  margin-bottom: 60px
+
+.active
+  background-color: $bg-color
+
+
+
+.active
+  height: 100%
+  background-color: $bg-color
+
+.current-block
+  padding: 10px 10px
+  text-align: center
+  display: inline-block
+  background-color: $primary-color
+.current-title
+  font-size: 20px
+  text-transform: uppercase
+  margin-bottom: 15px
+.current
+  font-size: 28px
+  color: #ffffff
+
+.btn
+  width: 164px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: absolute
+  left: 50%
+  transform: translateX(-82px)
+  transition: 0.3s
+  opacity: 0.6
+  &__title
+    // transition: 0.3s
+    // display: inline-block
+  &:hover
+    cursor: pointer
+    // width: 170px
+    // transform: translateX(-86px)
+    opacity: 1
+    .btn__title
+      // font-size: 26px
+
+.new-game
+  margin-top: 15px
+
+.roll-dice
+  width: 156px
+  margin-top: 292px
+  transform: translateX(-78px)
+
+.hold
+  width: 100px
+  transform: translateX(-50px)
+  margin-top: 352px
+
+// .final-score
+//   padding: 10px 0
+//   justify-content: center
+//   width: 180px
+//   transform: translateX(-90px)
+//   margin-top: 420px
+//   background-color: #ffffff
+//   border: 1px solid #000000
+//   opacity: 1
